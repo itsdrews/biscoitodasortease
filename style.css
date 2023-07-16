@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+
+}
+body {
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  margin: 0 auto;
+
+}
+.screen1{
+  text-align: center;
+  background-color: #FFFF;
+  padding: 4.8rem 6.4rem;
+  border:none;
+  border-radius: .5rem;
+  width: min(42.8rem,90%);
+  height: min(42.4rem,90%);
+  margin: 0 auto;
+}
+button {
+  border: none;
+  background-color: #FFFF;
+ 
+}
+
+.hide {
+  display: none;
+}
+/* tela 1 screen 1*/
+main .screen1 h1 {
+  color:#34355B;
+  font-size: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  margin-bottom: 1.4rem;
+
+}
+main p {
+  color:#34355B;
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+  width: auto;
+  height: auto;
+  margin-bottom: 2rem;
+}
+#fortuneCookie:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg);}
+  }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Tela 2 Screen 2 */
+.screen2 {
+  text-align: center;
+  background-color: #FFFF;
+  padding: 4.8rem 6.4rem;
+  border:none;
+  border-radius: .5rem;
+  width: min(42.8rem,90%);
+  height: auto;
+  margin: 0 auto;
+}
+main .screen2 h1 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #34355B;
+  margin-bottom: 1.7rem;
+}
+main .screen2 h2 {
+  font-family: 'Dancing Script';
+  margin-bottom: 1.7rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  background-color: #E4EDF1;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  animation: showPhrase .45s;
+
+}
+.screen2 img {
+  width:30rem;
+  height: 11.4rem;
+  margin: 6rem auto;
+}
+ .screen2 button {
+  border: none;
+  background-color: #FF9500;
+  font-family: 'DM Sans',sans-serif;
+  color: #FFFF;
+  padding: 1.6rem;
+  border-radius: .4rem;
+}
+.screen2 button:hover {
+  background-color: #b3751e;
+  cursor: pointer;
+
+
+}
+@keyframes showPhrase {
+  0% {transform:  scale(0,0)  translateY(100px);}
+  10% {transform: scale(0.10,0.10) translateY(90px);}
+  20% {transform: scale(0.20,0.20) translateY(80px);}
+  30% {transform: scale(0.30,0.30) translateY(70px);}
+  40% {transform: scale(0.40,0.40) translateY(60px);}
+  50% {transform: scale(0.50,0.50) translateY(50px);}
+  60% {transform: scale(0.60,0.60) translateY(40px);}
+  70% {transform: scale(0.70,0.70) translateY(30px);}
+  80% {transform: scale(0.80,0.80) translateY(20px);}
+  90% {transform: scale(0.90,0.90) translateY(10px);}
+  100% {transform: scale(1)  translateY(0px);}
+  /*
+  0% {transform:  translateY(100px);}
+  10% {transform: translateY(90px);}
+  20% {transform: translateY(80px);}
+  30% {transform: translateY(70px);}
+  40% {transform: translateY(60px) ;}
+  50% {transform: translateY(50px);}
+  60% {transform: translateY(40px);}
+  70% {transform: translateY(30px);}
+  80% {transform: translateY(20px);}
+  90% {transform: translateY(10px);}
+  100% {transform: translateY(0px);} 
+  */
+  
+  
+}
+
